@@ -1,4 +1,4 @@
-fetch('http://canadian-elite-travel.herokuapp.com/api/mygallery')
+fetch('https://canadian-elite-travel.herokuapp.com/api/mygallery')
   .then(function(response){
     return response.json();
   })
