@@ -7,8 +7,7 @@ const mongoose = require('mongoose');
 */
 const gallerySchema = new mongoose.Schema(
   { id : Number,
-  name: String,
-  site: String,
+  title: String,
   fileName: String, 
   description: String,
   url: String

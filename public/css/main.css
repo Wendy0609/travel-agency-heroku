@@ -270,7 +270,36 @@ section a:hover {
   .fieldset-index-page ul {
     margin-top: 0px;
   }
+/******* single.ejs *******/
+/*************************/
+.single{
+  min-height: 100vh;
+  /* sticky foot */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+.picture{
+  display:flex;
+  flex-direction:column;
+  width: 60%;
+  height: 80vh;
+  margin-top: 5%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  order:1
+}
+.picture img{
+   
+  margin: 0.5em;
+  height:30vh;
+  min-width:25vw;
 
+  border: 1px solid rgb(49, 165, 49);
+  border-radius: 4px;
+  /* padding: 2px; */
+} 
 
 /*****login.html body*****/
 /************************/
@@ -282,6 +311,8 @@ section a:hover {
   flex-direction: column;
   justify-content: space-between;
 }
+
+
 
 
 /***login.html  form***/
