@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Canadian Elite Travel</title>
         <%- include('./partials/css-global'); %>
-    <style>
-    </style>
+        <style>
+        </style>
     </head>
-<body class="single">
-    <%- include('./partials/header.ejs'); %>
- <div class="single_picture">
-  <figure class="picture">
-   <img src="<%=fileName%>" alt="<%=title%>" title="<%=title%>">
-   <figcaption> <%=title%></figcaption>
-   <figcaption><%=description%> </figcaption> 
-   <figcaption> <a href="<%=url%>"><%=url%></a> </figcaption>
-  </figure>
- </div>
- <%- include('./partials/foot'); %>
- <%- include('./partials/commen-js'); %>     
-</body>
+    <body class="single">
+        <%- include('./partials/header.ejs'); %>
+        <div class="single_picture">
+            <figure class="picture">
+            <img src="<%=fileName%>" alt="<%=title%>" title="<%=title%>">
+            <figcaption> <%=title%></figcaption>
+            <figcaption><%=description%> </figcaption> 
+            <figcaption> <a href="<%=url%>"><%=url%></a> </figcaption>
+            </figure>
+        </div>
+    <%- include('./partials/foot'); %>
+    <%- include('./partials/commen-js'); %>     
+    </body>
 </html>
