@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Canadian Elite Travel</title>
+        <%- include('./partials/css-global'); %>
+    <style>
+    </style>
+    </head>
+    <body class="login-signup-body">
+        <%- include('./partials/header.ejs'); %>
+        <br>
+        <br>
+        <div>
+            <form  action="#" method="POST">
+                <fieldset class="fieldset-login-page"> 
+                    <div class="login-container">
+                        <legend>Log In</legend>
+                        <br>
+                        <label for="uname"><b>Username/Email</b>
+                        </label>
+                        <span class="red-asterisk">*</span>
+                        <input type="text" id="uname" placeholder="Enter Username/Email" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+                            
+                        <button type="submit" class="submitbtn-login">Login</button>
+
+                        <label for="checkbox">
+                        <input type="checkbox" checked="checked" name="remember"> <small> Remember me</small>
+                        </label>
+                    </div>
+                    <div class="cancel-container" style="background-color:#f1f1f1">
+                        <button type="button" class="cancelbtn-login">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div style="margin-top:172px;"></div>
+        <%- include('./partials/foot'); %>
+        <%- include('./partials/commen-js'); %>     
+    </body>
+</html>

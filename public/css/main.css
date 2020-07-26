@@ -1,0 +1,564 @@
+/*****All html files*****/
+
+/*****Hamburgur Menu*****/
+/***********************/
+.menu  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 200px;
+    top: 10;
+    left: 20;
+    background-color: rgb(57, 107, 15);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .menu a {
+    padding:  8px 8px 8px 18px;
+    text-decoration: none;
+    font:15px  'galada';
+    color: #111;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #f1f1f1;
+  }
+  
+  .menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+  
+  .openbtn {
+    display: none;
+    position: absolute;
+    top:0;
+    left:10px;
+
+    font-size: 15px;
+    cursor: pointer;
+    background-image:linear-gradient(rgb(32, 44, 37),rgb(97, 136, 93));
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+ 
+
+
+
+
+/*****All html Header*****/
+/************************/
+
+#main-header{
+    display: flex; 
+    justify-content: space-between;
+
+    background-image:linear-gradient(rgb(32, 44, 37),rgb(97, 136, 93));
+    color: #fff;
+
+    padding-left: 0px; 
+    /* sticky foot need cross off the margin */
+    /* margin: auto; */
+    }
+
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px; 
+    overflow: hidden;
+}
+
+#navbar ul{
+    padding-right: 80px;
+    list-style-type: none;
+}
+
+#navbar li{
+    display: inline;
+    font:15px 'galada';
+}
+
+#navbar a{
+    color:#fff;
+    padding-right: 15px;
+}
+
+nav a {
+    padding: 0.5em 1em;
+ 
+    background-image: linear-gradient(rgb(37, 88, 57),rgb(72, 141, 65)); 
+    
+    color: white;
+
+    text-decoration: none; /* remove the underline of that link */
+    text-align: center;
+     
+    border-radius: 5px;
+  }
+nav a:hover{
+    background-image: linear-gradient(grey,lightgrey);
+  }
+ 
+  
+ 
+
+
+/***Index.html herosection***/
+/***************/
+
+
+#showcase{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image: url('https://picsum.photos/id/159/1900/1000');
+
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    margin-bottom: 30px;
+   
+    
+    height: 70vh;
+}
+
+#showcase h1{
+    color: #fff;
+    margin-bottom:15px ;
+     
+    line-height: 1.6em;
+ }
+
+#sign-up-now{
+    font: bold 20px 'galada';
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 10px;
+
+    text-decoration: none ;
+    background-color: rgb(47, 85, 35);
+}
+
+
+section a:hover {
+    background: linear-gradient(#38c725 10%, #a0f305 90%);
+    color: rgb(25, 26, 25);
+}
+
+/***Index.html Gallery***/
+/***************/
+
+.container{
+    width:90%;
+    margin: auto;
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sidebar{
+    float:left;
+    width: 70%;
+ 
+    background-image: linear-gradient(#89a885 10%, #abdb8f 90%);
+    text-align: center;
+
+    color: rgb(47, 85, 35);
+
+    padding:0px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 450px;
+    overflow: hidden;
+}
+ #gallery{
+   margin-bottom: 0;
+
+ }
+.array-gallery{
+    display: flex;
+    flex-wrap:wrap;
+    overflow: hidden;
+  
+    min-width: 30vh;
+    justify-content: center;
+    
+/* background-color: rgb(47, 85, 35); */
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    }
+.array-gallery img {
+        margin: 0.4em;
+        height:15vh;
+        min-width:13vw;
+
+        border: 1px solid rgb(49, 165, 49);
+        border-radius: 4px;
+        padding: 2px;
+   
+    }
+ 
+
+
+
+/***Index.html Contact form***/
+/***************/
+
+#contact-us{
+    justify-content: center;
+    float: right;
+    box-sizing: border-box;
+    min-width: 30vh;
+    padding-left: 10px;
+}
+
+.fieldset-index-page{
+    border-radius: 10px;
+    background-image: linear-gradient(#e7f8e5 10%, #e1f0d8 90%);
+    padding-left: 20px;
+    max-height:20 em;
+    width: 20em;
+    max-width:30em;
+     
+}
+.fieldset-index-page legend{
+    font: bold 20px 'galada';
+    color: rgb(47, 85, 35);
+}
+
+.fieldset-index-page input[type=text], textarea{
+    width: 100%;
+    padding: 0;
+    
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+  }
+
+.fieldset-index-page input[type=submit] {
+    background-color: rgb(37, 88, 57);
+    color: white;
+    font: bold 15px 'galada';
+
+    padding: 4px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  
+.fieldset-index-page input[type=submit]:hover {
+    background-color: #4CAF50;
+  }
+  .fieldset-index-page p {
+    margin: 0px;
+  }
+  .fieldset-index-page ul {
+    margin-top: 0px;
+  }
+
+
+/*****login.html body*****/
+/************************/
+.login-signup-body{
+  background-color: rgb(173, 166, 166);
+  min-height: 100vh;
+  /* sticky foot */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/***login.html  form***/
+/*********************/
+
+/*  login.html input fields */
+.fieldset-login-page input[type=text], .fieldset-login-page input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+ /*login.html Set a style for the login button */
+
+ .submitbtn-login {
+    background-color: #1e6121;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+}
+
+
+.submitbtn-login:hover {
+    opacity: 1;
+  }
+
+  .submitbtn-login {
+      font-size: 15px;
+      font-weight: bold;
+  }
+  .cancelbtn-login {
+      width: auto;
+      padding: 8px 13px;
+      background-color: #705d5c;
+  }
+ /*login.html format login form */
+
+            
+ .fieldset-login-page{
+    border: none;
+}
+
+.login-container {
+    padding: 16px;
+    font-size: 20px;
+    width: 40vh;
+    margin: auto;
+    border: solid rgb(18, 44, 18);
+    border-bottom: none;
+    background-color: white;
+}
+
+.login-container legend{ 
+    text-align: center;
+    font: bold 30px 'galada';
+} 
+
+ /* login.html format login form */
+ .cancel-container {
+    padding: 16px;
+    font-size: 20px;
+    width: 40vh;
+    margin: auto;
+    border: solid rgb(18, 44, 18);
+    background-color: white;
+  }
+
+/* login.html & register.html add red asterisks  */
+
+  .red-asterisk{
+    color: red;
+  }
+
+  span.psw {
+      float: right;
+      padding-top: 16px;
+
+      font-size: 15px;
+  }
+
+/* register.html */
+
+  .signup-form {
+    box-sizing: border-box;
+  }
+     
+  /*register.html form format*/
+
+  .fieldset-signup-page{
+    border: none;
+  }
+
+  .signup-container {
+    padding: 16px;
+    background-color: white;
+    border: solid rgb(11, 82, 34);
+    width: 40vh;
+    margin: auto;
+  }
+
+  .signup-container legend{
+    text-align: center;
+    font: bold 30px 'galada';
+  }
+
+/* register.html Full-width input fields */
+.fieldset-signup-page input[type=text],.fieldset-signup-page input[type=password] {
+    width: 100%;
+    padding: 8px 8px 0px 8px;
+    margin: 3px 0 15px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    box-sizing: border-box;
+}
+
+.fieldset-signup-page label{
+    font-size: 15px;
+}
+.fieldset-signup-page input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* register.html  Set a style for the submit button */
+.registerbtn {
+    background-color: #1e6121;
+    size: 17px;
+
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+
+    padding: 12px;
+    margin: 8px 10;
+    border: black;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+  }
+
+  .registerbtn:hover {
+    opacity: 1;
+  }
+
+ 
+  /* Add a text color to links */
+  a {
+    color: rgb(52, 11, 146);
+  }
+  #already-sign-up{
+    padding-left: 38%;
+  }
+/* register.html page media link*/
+.fa {
+    padding: 10px;
+    font-size: .7em;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    }
+
+    .fa:hover {
+        opacity: 0.5;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-google {
+      background: #dd4b39;
+      color: white;
+    }
+
+
+/****** Error_Message page*******/
+/* *************************** */
+.error_message{
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+overflow: hidden;
+
+background-image: url('https://picsum.photos/id/159/1900/1000');
+
+background-position: center;
+background-size: cover;
+min-height: 300px;
+/* margin-bottom: 30px; */
+
+
+height: 100vh;
+}
+.error_message h1{
+  margin-top:20%;
+  text-align: center;
+  font: bold 60px 'galada';
+  color: #ccc;
+}
+#return_btn{
+  background-color: #1e6121;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+}
+
+
+
+
+/*****Footer for all page*****/
+/****************************/
+
+#main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;  
+    background-image:linear-gradient(rgb(32, 44, 37),rgb(97, 136, 93));
+    text-align-last: center;
+    width: 100%;
+    height: 2.15rem;
+    overflow: hidden;
+
+    color: #fff;
+    font-size: 15px;
+  
+    padding-top:  0px;
+}
+
+.myfooter{
+    color: #fff;
+}
+
+.myfooter:hover{
+    color: green;
+}
+
+
+@media(max-width:600px){
+    #main{
+        widows: 100%;
+        float: none;
+    }
+    #sidebar{
+        widows: 100%;
+        float: none;
+    }
+}
+ /* hamburgur menu showup for small screen */
+ @media (orientation: portrait){
+  .openbtn{
+    display: block;
+  }
+  #main-header {position: absolute;
+   top: -200px;
+
+  }
+}

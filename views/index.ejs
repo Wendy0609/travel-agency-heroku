@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Elite Travel</title>
+    <%- include('./partials/css-global'); %>
+<style>
+</style>
+</head>
+<body>
+  <!--  hearder for all html files -->
+  <%- include('./partials/header.ejs'); %>
+  <!-- Herosection -->
+    <div id="showcase">
+        <a href="/">
+          <img src="images/travel.svg" width="80px" title=" Canadian Elite Travel" alt="CET Logo">
+        </a>
+        <section> 
+            <h1>
+                Your Trusted Travel Agency Ever
+            </h1>
+            <a id="sign-up-now"   href="/register"> Sign Up Now </a>
+        </section> 
+    </div>
+            <!--Gallery & Cobntact Form-->
+    <div class="container">
+        <aside  id="sidebar">
+            <div>
+                <h1 id="Gallery">Gallery</h1>
+                <div class="array-gallery"></div>
+            </div>
+        </aside>
+        <div id="contact-us">
+            <form id="contact" action="mailto:wenhong.liu@edu.sait.ca" method="POST" enctype="text/plain">
+                <fieldset class="fieldset-index-page">
+                    <legend>Contact Us</legend>
+                    <label for="fname"><b>Full Name</b></label>
+                    <input type="text" id="fname" name="fullname" placeholder="Your full name..">
+                                        
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" id="email" name="email"  placeholder="Enter Your Email" >
+                                
+                    <label for="subject"><b>Subject</b></label>
+                    <textarea id="subject" name="subject" placeholder="Your comment/question.." style="height:100px"></textarea>
+                    <br>
+                                            
+                    <input type="submit" value="Submit">
+                    <br>
+                    <br>
+                    <p>
+                        Our contact info:
+                        <ul>
+                            <li>Adress:1301 16 Ave NW, Alberta, CANADA   </li>  
+                            <li>Email: Techcareer@edu.sait.ca</li>
+                            <li>Phone:  403 284 7248</li>
+                        </ul>
+                    </p>     
+                </fieldset>
+            </form>
+        </div>   
+    </div>     
+    <div class="clr"></div>
+    <div style="margin-top:80px;"></div>
+        <!-- Footer -->
+    
+    <%- include('./partials/foot'); %>
+    <%- include('./partials/commen-js'); %>  
+</body>
+</html>

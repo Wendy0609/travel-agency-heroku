@@ -1,0 +1,71 @@
+/* Raleway */ 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* Galada */
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+
+body{
+    background-color: #f4f4f4;
+    color:#555;
+    line-height: 1.6em;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+h1,
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6 {
+    font-family: 'galada', roboto;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* login.html Set a font size */
+
+.fieldset-login-page label{
+    font-size: 15px;
+}
+
+
+/* menu */
+.menu .closebtn {
+    font-size: 30px;
+  }
+  
+  .openbtn {
+    font-size: 15px;
+}
+
+#navbar li{
+    font:15px 'galada';
+}
+
+#navbar a{
+    font-size: 15px;
+}
+/* index.html */
+#showcase h1{
+    font-size: 60px;
+}
+
+.fieldset-index-page label {
+    font-size: 15px ;
+}
+.fieldset-index-page li {
+    font-size:12px ;
+  }
+  .fieldset-index-page p {
+    font-size:15px;
+  }
+
+
+/* register.html to make small font on "Terms and Privacy" */
+#terms {
+    font-size: 12px;
+  }

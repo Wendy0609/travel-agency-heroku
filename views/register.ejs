@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Elite Travel</title>
+    <%- include('./partials/css-global'); %>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<style>
+</style>
+</head>
+<body class="login-signup-body">
+    <%- include('./partials/header.ejs'); %>
+        <br>
+        <br>
+    <div class="signup-form" >
+        <form action="" method="POST">
+            <fieldset class="fieldset-signup-page">
+                <div class="signup-container">
+                    <legend>Register</legend>
+                    <p>Please sign up to create an account.</p>
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <span class="red-asterisk">*</span>
+                    <input type="text" placeholder="Enter Username/Email" name="email" id="email" required>
+                  
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required minlength="8">
+                  
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required minlength="8">
+                    <hr>
+
+                    <label for="checkbox">
+                    <input type="checkbox" checked="checked" name="Subscribe"> Subscribe to Newsletter
+                    </label>
+                    <p id="terms">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                  
+                    <button type="submit" class="registerbtn">Sign Up to Register</button>
+                </div>
+                <div id="already-sign-up">
+                    <p>Already have an account? <a href="login.html">Log In.</a>
+                    <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a></p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div style="margin-top:10px;"></div>
+    <%- include('./partials/foot'); %>
+    <%- include('./partials/commen-js'); %> 
+</body>
+</html>
